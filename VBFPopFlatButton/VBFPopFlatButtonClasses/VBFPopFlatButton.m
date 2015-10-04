@@ -92,7 +92,9 @@
     self.bckgLayer.frame = CGRectInset(self.bounds, -amount, -amount);
     self.bckgLayer.cornerRadius = self.bckgLayer.bounds.size.width/2;
     self.bckgLayer.backgroundColor = self.roundBackgroundColor.CGColor;
-
+    self.bckgLayer.borderColor = self.tintColor.CGColor; 
+    self.bckgLayer.borderWidth = 0.7;
+    
     [self.layer insertSublayer:self.bckgLayer below:_firstSegment];
 }
 
