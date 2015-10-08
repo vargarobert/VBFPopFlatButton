@@ -94,6 +94,7 @@
     self.bckgLayer.backgroundColor = self.roundBackgroundColor.CGColor;
     self.bckgLayer.borderColor = self.tintColor.CGColor; 
     self.bckgLayer.borderWidth = 0.7;
+    self.bckgLayer.opacity = 0.85;
     
     [self.layer insertSublayer:self.bckgLayer below:_firstSegment];
 }
